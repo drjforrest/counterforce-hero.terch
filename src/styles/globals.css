@@ -79,7 +79,7 @@ body {
 .hero {
   position: relative;
   height: 500px;
-  background-image: url('/HERO%20Lab%20Media%20Library.png');
+  background-image: url('/hero-lab-media-library.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,6 +87,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  /* Ensure no overlay */
 }
 
 

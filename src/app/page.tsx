@@ -13,6 +13,12 @@ export default function HomePage() {
 
       <div className="container">
         <section className="section">
+          <p>
+            <a href="/contact" className="wp-block-button__link has-primary-blue-background-color has-background wp-element-button">Contact Us</a>
+          </p>
+        </section>
+
+        <section className="section">
           <h2>The Challenge</h2>
           <p>In times of crisis — from pandemics to climate emergencies — the spread of misinformation can be as dangerous as the crises themselves. False or misleading information undermines trust in science, weakens emergency responses, and exacerbates health inequities. Despite billions invested in preparedness, societies remain vulnerable because evidence too often fails to reach decision-makers and communities with the speed, clarity, and trust required.</p>
           <p>Traditional research systems are not designed for this reality. They generate evidence, but lack the translational pipelines and technologies to convert knowledge into timely, actionable solutions. Meanwhile, adversaries exploit information environments to spread disinformation at scale. The stakes are clear: without resilient systems rooted in equity and trust, the next crisis will deepen divides and cost lives.</p>
@@ -132,6 +138,51 @@ export default function HomePage() {
                   <li>Translation of research into policies and practices that reduce disparities.</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section className="section">
+          <h2 className="has-large-font-size">Leadership</h2>
+          <div className="bio-section">
+            <div className="bio-header">
+              <div className="bio-photo">
+                <Image 
+                  src="/Meaghan Thumath.jpeg" 
+                  alt="Dr. Meaghan Thumath"
+                  width={180}
+                  height={180}
+                />
+              </div>
+              <div className="bio-info">
+                <h2>Dr. Meaghan Thumath, DPhil, MPH, RN</h2>
+                <p className="bio-title">Principal Investigator & Founder, HERO Observatory<br />Assistant Professor, School of Nursing, Faculty of Applied Science</p>
+              </div>
+            </div>
+            <div className="bio-content">
+              <p>Dr. Meaghan Thumath is an Assistant Professor at the University of British Columbia and founder of the HERO Lab, a research hub dedicated to applying artificial intelligence to protect communities during public health and climate emergencies. Her interdisciplinary program—funded by CIHR, SSHRC, and international agencies—has advanced equity-focused interventions that counter misinformation, improve health outcomes, and rebuild trust in institutions during crises.</p>
+            </div>
+          </div>
+
+          <div className="bio-section">
+            <div className="bio-header">
+              <div className="bio-photo">
+                <Image 
+                  src="/Jamie Forrest.png" 
+                  alt="Dr. Jamie Forrest"
+                  width={180}
+                  height={180}
+                />
+              </div>
+              <div className="bio-info">
+                <h2>Dr. Jamie Forrest, PhD, MPH</h2>
+                <p className="bio-title">Scientific Director, HERO Observatory<br />Postdoctoral Research Fellow, Faculty of Applied Science</p>
+              </div>
+            </div>
+            <div className="bio-content">
+              <p>Dr. Jamie I. Forrest is a global health researcher and implementation scientist with interests and expertise in clinical research operations, AI, and digital health equity. As a Postdoctoral Fellow in the UBC Faculty of Applied Science and Scientific Director of the HERO Observatory, he co-leads research investigating how artificial intelligence and digital technologies help, harm, and strengthen operational capacity for public health, particular during health emergencies.</p>
             </div>
           </div>
         </section>

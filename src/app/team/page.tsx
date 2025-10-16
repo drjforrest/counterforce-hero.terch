@@ -26,7 +26,7 @@ export default function TeamPage() {
           <div className="bio-header">
             <div className="bio-photo">
               <Image 
-                src="/meaghan_thumath.jpeg" 
+                src="/Meaghan Thumath.jpeg" 
                 alt="Dr. Meaghan Thumath"
                 width={180}
                 height={180}
@@ -52,7 +52,7 @@ export default function TeamPage() {
           <div className="bio-header">
             <div className="bio-photo">
               <Image 
-                src="/jamie-forrest-940x940.png" 
+                src="/Jamie Forrest.png" 
                 alt="Dr. Jamie Forrest"
                 width={180}
                 height={180}
