@@ -5,10 +5,6 @@ export default function HomePage() {
   return (
     <>
       <div className="hero">
-        <div className="hero-content">
-          <h1>HERO — Health Equity & Resilience Observatory</h1>
-          <p className="tagline">Equity, Trust, and Resilience in Action</p>
-        </div>
       </div>
 
       <div className="container">
