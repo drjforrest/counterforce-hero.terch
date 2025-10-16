@@ -7,6 +7,10 @@ export default function HomePage() {
       <div className="hero">
       </div>
 
+      <div className="tagline-section">
+        <p className="tagline">Equity, Trust, and Resilience in Action</p>
+      </div>
+
       <div className="container">
         <section className="section">
           <h2>The Challenge</h2>
