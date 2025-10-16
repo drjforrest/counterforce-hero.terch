@@ -34,8 +34,32 @@ body {
   align-items: center;
 }
 
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .nav-logo img {
   display: block;
+}
+
+.nav-org-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.hero-text {
+  color: #21263E;
+}
+
+.counterforce-text {
+  color: #D25B2C;
+}
+
+.separator {
+  color: #64748B;
 }
 
 .nav-links {
@@ -76,13 +100,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(58, 75, 92, 0.7);
+  background: rgba(5, 23, 61, 0.8);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   text-align: center;
   color: white;
   padding: 0 24px;
@@ -95,6 +119,7 @@ body {
   margin-bottom: 16px;
   letter-spacing: -0.02em;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero .tagline {
@@ -102,6 +127,7 @@ body {
   color: #4AA3A3;
   font-weight: 500;
   font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 /* Page Header */
@@ -414,6 +440,18 @@ footer {
   .solution-icon,
   .pillar-icon {
     margin: 0 auto 16px auto;
+  }
+  
+  .nav-brand {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .nav-org-name {
+    font-size: 0.8rem;
+    white-space: normal;
+    line-height: 1.3;
   }
   
   .bio-section {

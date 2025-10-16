@@ -16,36 +16,18 @@ export default function ContactPage() {
       />
 
       <div className="container">
-        <div className="contact-grid">
+        <section className="section">
+          <p>We welcome enquiries from academic institutions, policy makers, community partners, and funders interested in collaborative research, knowledge translation, or supporting our mission. Whether you're exploring research partnerships, seeking expertise in crisis response and misinformation detection, or interested in our training programmes, we'd like to hear from you.</p>
+        </section>
+        
+        <section className="section">
+          <h2>Primary Contact</h2>
           <div className="contact-card">
-            <h3>General Inquiries</h3>
-            <p>For general questions about HERO Observatory and our research:</p>
-            <p><a href="mailto:hero.observatory@ubc.ca">hero.observatory@ubc.ca</a></p>
+            <h3>Dr. Meaghan Thumath</h3>
+            <p><strong>Principal Investigator</strong></p>
+            <p>Email: <a href="mailto:meaghan.thumath@ubc.ca">meaghan.thumath@ubc.ca</a></p>
           </div>
-
-          <div className="contact-card">
-            <h3>Research Collaborations</h3>
-            <p>Interested in partnering with us?</p>
-            <p><strong>Dr. Meaghan Thumath</strong><br />
-            Principal Investigator<br />
-            <a href="mailto:meaghan.thumath@ubc.ca">meaghan.thumath@ubc.ca</a></p>
-          </div>
-
-          <div className="contact-card">
-            <h3>Technology & Data Science</h3>
-            <p>Questions about our AI and data science work?</p>
-            <p><strong>Dr. Jamie Forrest</strong><br />
-            Scientific Director<br />
-            <a href="mailto:james.forrest@ubc.ca">james.forrest@ubc.ca</a></p>
-          </div>
-
-          <div className="contact-card">
-            <h3>Location</h3>
-            <p><strong>HERO Observatory</strong><br />
-            Remote-first organization<br />
-            Operating globally to advance health equity</p>
-          </div>
-        </div>
+        </section>
 
         <Footer />
       </div>
