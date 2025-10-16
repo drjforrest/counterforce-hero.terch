@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — HERO Observatory</title>
+    <meta name="description" content="Get in touch with the HERO Observatory team at UBC.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #2B2E34;
+            background: #FAFBFC;
+        }
+        
+        /* Navigation */
+        .nav {
+            background: white;
+            border-bottom: 1px solid #EEF2F5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo img {
+            display: block;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav-link {
+            color: #2B2E34;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #00B3B8;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(135deg, #0B1F3B 0%, #2B2E34 100%);
+            color: white;
+            padding: 80px 24px 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .page-header p {
+            font-size: 1.25rem;
+            color: #00B3B8;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .contact-card h3 {
+            font-size: 1.25rem;
+            color: #0B1F3B;
+            margin-bottom: 16px;
+        }
+        
+        .contact-card p {
+            margin-bottom: 12px;
+            color: #64748B;
+        }
+        
+        .contact-card a {
+            color: #00B3B8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid #EEF2F5;
+            color: #64748B;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="/public/HERO Lab Logo 150x150.png" alt="HERO Lab" style="height: 40px;">
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/team.html" class="nav-link">Team</a>
+                <a href="/contact.html" class="nav-link active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the HERO Observatory team</p>
+    </div>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>General Inquiries</h3>
+                <p>For general questions about HERO Observatory and our research:</p>
+                <p><a href="mailto:hero.observatory@ubc.ca">hero.observatory@ubc.ca</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Research Collaborations</h3>
+                <p>Interested in partnering with us?</p>
+                <p><strong>Dr. Meaghan Thumath</strong><br>
+                Principal Investigator<br>
+                <a href="mailto:meaghan.thumath@ubc.ca">meaghan.thumath@ubc.ca</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Technology & Data Science</h3>
+                <p>Questions about our AI and data science work?</p>
+                <p><strong>Dr. Jamie Forrest</strong><br>
+                Scientific Director<br>
+                <a href="mailto:james.forrest@ubc.ca">james.forrest@ubc.ca</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p><strong>HERO Observatory</strong><br>
+                School of Nursing<br>
+                Faculty of Applied Science<br>
+                The University of British Columbia<br>
+                T201-2211 Wesbrook Mall<br>
+                Vancouver, BC V6T 2B5<br>
+                Canada</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>HERO — Health Equity & Resilience Observatory</strong><br>
+            School of Nursing, Faculty of Applied Science<br>
+            The University of British Columbia, Vancouver Campus</p>
+        </footer>
+    </div>
+</body>
+</html>

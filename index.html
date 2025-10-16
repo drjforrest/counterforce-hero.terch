@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERO — Health Equity & Resilience Observatory</title>
+    <meta name="description" content="The Health Equity & Resilience Observatory at UBC transforms evidence into action, bridging academic research and crisis response.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #2B2E34;
+            background: #FAFBFC;
+        }
+        
+        
+        /* Navigation */
+        .nav {
+            background: white;
+            border-bottom: 1px solid #EEF2F5;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo img {
+            display: block;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav-link {
+            color: #2B2E34;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-link:hover,
+        .nav-link.active {
+            color: #00B3B8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: #0B1F3B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 0 24px;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: #00B3B8;
+            font-weight: 500;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        /* Typography */
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0B1F3B;
+            margin-top: 48px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0B1F3B;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 16px;
+            padding-left: 28px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+        
+        li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #00B3B8;
+            font-weight: 700;
+        }
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #EEF2F5;
+            margin: 48px 0;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid #EEF2F5;
+            color: #64748B;
+            font-size: 0.95rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.25rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="/public/HERO Lab Logo 150x150.png" alt="HERO Lab" style="height: 40px;">
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/team.html" class="nav-link">Team</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img src="/public/HERO Lab Media Library.png" alt="HERO Observatory" class="hero-image">
+        <div class="hero-content">
+            <h1>HERO — Health Equity & Resilience Observatory</h1>
+            <p class="tagline">Equity, trust, and resilience in action</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>The Challenge</h2>
+            <p>In times of crisis — from pandemics to climate emergencies — the spread of misinformation can be as dangerous as the crises themselves. False or misleading information undermines trust in science, weakens emergency responses, and exacerbates health inequities. Despite billions invested in preparedness, societies remain vulnerable because evidence too often fails to reach decision-makers and communities with the speed, clarity, and trust required.</p>
+            <p>Traditional research systems are not designed for this reality. They generate evidence, but lack the translational pipelines and technologies to convert knowledge into timely, actionable solutions. Meanwhile, adversaries exploit information environments to spread disinformation at scale. The stakes are clear: without resilient systems rooted in equity and trust, the next crisis will deepen divides and cost lives.</p>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Our Solution</h2>
+            <p>The Health Equity & Resilience Observatory (HERO) at the University of British Columbia is dedicated to closing this gap. HERO brings together frontline clinical expertise, cutting-edge AI, and global health leadership to transform evidence into action.</p>
+            
+            <ul>
+                <li><strong>Academic depth, frontline credibility:</strong> HERO is founded by Dr. Meaghan Thumath, a clinician and global health leader with two decades of experience across HIV, Ebola, and COVID-19.</li>
+                <li><strong>Scientific direction in frontier tech:</strong> Led by Dr. Jamie Forrest, HERO integrates crisis informatics and data science to create next-generation intelligence for resilience.</li>
+                <li><strong>Bridge to real-world deployment:</strong> HERO innovations seed Counterforce AI, a venture spin-out building tools that counter misinformation and strengthen decision-making in real time.</li>
+            </ul>
+            
+            <p>Together, HERO and Counterforce form a unique pipeline: from evidence → to observatory insights → to actionable systems deployed at scale.</p>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Research Pillars</h2>
+            
+            <h3>1. Trust & Crisis Intelligence</h3>
+            <ul>
+                <li>AI-powered detection of misinformation and harmful narratives.</li>
+                <li>Decision-support dashboards for governments, NGOs, and health systems.</li>
+            </ul>
+            
+            <h3>2. Resilient & Equitable Health Systems</h3>
+            <ul>
+                <li>Implementation science to test and scale interventions in emergencies.</li>
+                <li>Equity frameworks that ensure marginalized populations are prioritized.</li>
+            </ul>
+            
+            <h3>3. Equity-Driven Interventions</h3>
+            <ul>
+                <li>Co-designed solutions across HIV, addictions, reproductive health, and humanitarian response.</li>
+                <li>Translation of research into policies and practices that reduce disparities.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Impact</h2>
+            <p>HERO will:</p>
+            <ul>
+                <li>Protect trust in science and democracy by countering harmful narratives during crises.</li>
+                <li>Strengthen health and humanitarian systems to act quickly and fairly.</li>
+                <li>Advance global health equity by ensuring vulnerable communities are not left behind.</li>
+                <li>Train the next generation of scholars and practitioners in "Trust-Tech" — a new field at the intersection of equity, resilience, and AI.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="section">
+            <h2>Why Now</h2>
+            <p>The world is facing a convergence of crises — pandemics, climate change, political instability — all amplified by information disorder. The window to build resilient, equitable systems is narrow, but the opportunity is historic. HERO is uniquely positioned to act now, leveraging UBC's credibility, Canadian innovation ecosystems, and global partnerships.</p>
+        </section>
+
+        <footer>
+            <p><strong>HERO — Health Equity & Resilience Observatory</strong><br>
+            School of Nursing, Faculty of Applied Science<br>
+            The University of British Columbia, Vancouver Campus</p>
+        </footer>
+    </div>
+</body>
+</html>
